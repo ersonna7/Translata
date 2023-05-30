@@ -1,0 +1,309 @@
+* {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+
+body,
+div,
+p,
+select,
+textarea {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* padding: 50px; */
+    /* margin: 50px; */
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        display: block;
+    }
+}
+
+.wrapper {
+ overflow: hidden;
+ }
+
+.hero-1 {
+    flex: 1;
+}
+
+
+.hero-2 {
+    flex: 1;
+}
+
+/* CSS for responsiveness */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-1,
+    .hero-2 {
+        flex-basis: 100%;
+    }
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    /* overflow-y: hidden; */
+}
+
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 40px 20px;
+    border-radius: 25px;
+}
+
+center h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 48px;
+    color: #333333;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#side1,
+#side2 {
+    flex: 1 1 45%;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.text-area {
+    background-color: #EDEFFB;
+    border: none;
+    border-radius: 8px;
+    transition: all 300ms;
+    cursor: pointer;
+    user-select: none;
+    border-color: #45a049;
+}
+
+.text-area:focus {
+    border: none;
+
+}
+
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #666666;
+}
+
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    color: #333333;
+    resize: vertical;
+}
+
+button#copy-btn {
+    border: none;
+    display: block;
+    width: 120%;
+    padding: 10px;
+    background-color: #2134ac;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 3rem; */
+    margin-bottom: 3rem;
+    color: #ffffff;
+    border: none;
+    border-radius: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 300;
+}
+
+button#copy-btn:hover {
+    background-color: #09176d;
+}
+
+button#translate-btn {
+    border: none;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 3rem; */
+    margin-bottom: 3rem;
+    text-align: center;
+    padding: 10px;
+    background-color: #2134ac;
+    color: #ffffff;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 300;
+}
+
+button#translate-btn:hover {
+    background-color: #09176d;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-1,
+    .hero-2 {
+        flex-basis: 100%;
+    }
+}
+
+
+#source-language {
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    background: #EDEFFB;
+    outline: 2px solid #EDEFFB;
+    transition: all 300ms;
+    cursor: pointer;
+    user-select: none;
+}
+
+#target-language {
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    background: #EDEFFB;
+    outline: 2px solid #EDEFFB;
+    transition: all 300ms;
+    cursor: pointer;
+    user-select: none;
+}
+
+.optns {
+    font-size: 15px;
+}
+
+
+.heading-des {
+    color: #031fd3;
+    font-weight: 200;
+}
+
+.hero-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 48px;
+}
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+
+footer {
+    /* position: absolute; */
+    width: 100%;
+    margin-top: 4rem;
+    bottom: 0;
+    height: 50px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    footer {
+        position: sticky;
+        display: block;
+        bottom: -350px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .dummy-optns {
+        display: none;
+    }
+}
+
+.moving-text {
+    white-space: nowrap;
+    animation: slide-sidewards 30s linear infinite;
+    width: 100%; /* Adjust the width as needed */
+  }
+  
+  @keyframes slide-sidewards {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  

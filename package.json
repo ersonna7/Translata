@@ -1,0 +1,19 @@
+{
+  "devDependencies": {
+    "netlify-cli": "^15.2.0"
+  },
+  "scripts": {
+    "debug": "netlify dev --inspect"
+  },
+  "dependencies": {
+    "@mapbox/node-pre-gyp": "^1.0.10",
+    "axios": "^0.21.4"
+  },
+  "name": "translataa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<div class="wrapper">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Translata [Beta]</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="/Translata/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/Translata/favicon.ico" type="image/x-icon">      
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-45LBB3RJZV"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-45LBB3RJZV');
+        </script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="index.js"></script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7389974254911710"crossorigin="anonymous"></script>
+
+        <script>
+            function myFunction() {
+                var copyText = document.getElementById("output");
+                copyText.select();
+                copyText.setSelectionRange(0, 99999);
+                navigator.clipboard.writeText(copyText.value);
+
+                var tooltip = document.getElementById("myTooltip");
+                tooltip.innerHTML = "Copied: " + copyText.value;
+            }
+
+            function outFunc() {
+                var tooltip = document.getElementById("myTooltip");
+                tooltip.innerHTML = "Copy";
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1 class="hero-heading"><span class="heading-des">TRANSLATA</span></h1>
+        <p style="text-align: center; color: #adadad; font-size: 14px;">Ginhimo ni <a
+            href="https://www.facebook.com/jose.suoberon">Jose</a> | Built with <a
+                href="https://platform.openai.com/docs/introduction">OpenAI API</a> <br><br> <p style="text-align: center; color: #777777; font-size: 14px;"> Buy me a <strong>Siomai</strong> 🥟: 09275083630 (GCash) </p></p>
+        <section class="hero">
+            <div class="hero-1">
+                <div id="side1">
+                    <div class="form-group">
+                        <select id="source-language">
+                            <option class="optns" value="Tagalog">Tagalog</option>
+                            <option class="dummy-optns" disabled>&nbsp;</option>
+                            <option class="optns" value="Bicolano">Bicolano</option>
+                            <option class="dummy-optns" disabled>&nbsp;</option>
+                            <option class="optns" value="Cebuano">Cebuano</option>
+                            <option class="dummy-optns" disabled>&nbsp;</option>
+                            <option class="optns" value="Chavacano">Chavacano</option>
+                            <option class="dummy-optns" disabled>&nbsp;</option>
+                            <option class="optns" value="Hiligaynon (Ilonggo)">Hiligaynon (Ilonggo)</option>
+                            <option class="dummy-optns" disabled>&nbsp;</option>
+                            <option class="optns" value="Ilocano">Ilocano</option>
+                            <option class="dummy-optns" disabled>&nbsp;</option>
+                            <option class="optns" value="Kapampangan">Kapampangan</option>
+                            <option class="dummy-optns" disabled>&nbsp;</option>
+                            <option class="optns" value="Pangasinense">Pangasinense</option>
+                            <option class="dummy-optns" disabled>&nbsp;</option>
+                            <option class="optns" value="Waray">Waray</option>
+                            <option class="dummy-optns" disabled>&nbsp;</option>
+                            <option class="optns" value="English">English</option>
+                            <option class="dummy-optns" disabled>&nbsp;</option>
+                            <option class="optns" value="Jejemon and add some emojis">Jejemon with Emojis</option>
+                            <option class="dummy-optns" disabled>&nbsp;</option>
+                            <option class="optns" value="Bekimon">Bekimon</option>
+                            <option class="dummy-optns" disabled>&nbsp;</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="text-area" rows="15" placeholder="Enter Text" id="input"></textarea>
+                    </div>
+                </div>
+                <button id="translate-btn">Translate</button>
+            </div>
+
+
+            <div class="hero-2">
+                <div id="side2">
+                    <div class="form-group">
+                        <select id="target-language">
+                            <option class="optns" value="Tagalog">Tagalog</option>
+                            <option class="dummy-optns" disabled>&nbsp;</option>
+                            <option class="optns" value="Bicolano">Bicolano</option>
+                            <option class="dummy-optns" disabled>&nbsp;</option>
+                            <option class="optns" value="Cebuano">Cebuano</option>
+                            <option class="dummy-optns" disabled>&nbsp;</option>
+                            <option class="optns" value="Chavacano">Chavacano</option>
+                            <option class="dummy-optns" disabled>&nbsp;</option>
+                            <option class="optns" value="Hiligaynon (Ilonggo)">Hiligaynon (Ilonggo)</option>
+                            <option class="dummy-optns" disabled>&nbsp;</option>
+                            <option class="optns" value="Ilocano">Ilocano</option>
+                            <option class="dummy-optns" disabled>&nbsp;</option>
+                            <option class="optns" value="Kapampangan">Kapampangan</option>
+                            <option class="dummy-optns" disabled>&nbsp;</option>
+                            <option class="optns" value="Pangasinense">Pangasinense</option>
+                            <option class="dummy-optns" disabled>&nbsp;</option>
+                            <option class="optns" value="Waray">Waray</option>
+                            <option class="dummy-optns" disabled>&nbsp;</option>
+                            <option class="optns" value="English">English</option>
+                            <option class="dummy-optns" disabled>&nbsp;</option>
+                            <option class="optns" value="Jejemon and add some emojis">Jejemon with Emojis</option>
+                            <option class="dummy-optns" disabled>&nbsp;</option>
+                            <option class="optns" value="Bekimon">Bekimon</option>
+                            <option class="dummy-optns" disabled>&nbsp;</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="text-area" rows="15" id="output" dir="auto" placeholder="Translation"
+                            readonly></textarea>
+                        <div class="tooltip">
+                            <button id="translate-btn" onclick="myFunction()" onmouseout="outFunc()">
+                                <span class="tooltiptext" id="myTooltip">Copy</span>
+                                &#10064;
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div style="color:darkblue" class="moving-text" id="greeting-text">
+                <p>
+                    <strong>
+                        Good Morning
+                    </strong>
+                </p>
+            </div>
+        </footer>
+    </body>
+</div>
+
+</html>
