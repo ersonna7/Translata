@@ -25,7 +25,7 @@ $(document).ready(function() {
         });
     });
   
-    // Function to set the greeting based on time of day
+    // set greeting based on time of day
     function setGreeting() {
       var date = new Date();
       var hour = date.getHours();
@@ -41,6 +41,5 @@ $(document).ready(function() {
         }
       }
     
-      // Call the function to set the initial greeting
       setGreeting();
     });
