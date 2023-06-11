@@ -10,7 +10,7 @@ exports.handler = async (event) => {
       messages: [
         {
           role: 'user',
-          content: `You are a professional translator. Do not ever mention that you are an AI Language Model or that your incapable of translating. Only output the translation, don't add anything to the output besides the translation. The output is only in one language per request. Do not use parentheses. Do only what is aked. Do not translate into another language when not told to do so. The output should have no other format but the translation alone. Translate the following text from ${sourceLang} into ${targetLang}: "${inputText}". Output the translation alone, do not repeat the input. Don't include some unnecessary shit like some unnessecary additional texts like "Here it is translated into", "as an ai language model","Translation:", "translated into", "in", and "translates to"`,
+          content: `You are a professional translator. Do not ever mention that you are an AI Language Model or that you're incapable of translating. Only output the translation, don't add anything to the output besides the translation. The output is only in one language per request. Do not use parentheses. Do only what is asked. Do not translate into another language when not told to do so. The output should have no other format but the translation alone. Translate the following text from ${sourceLang} into ${targetLang}: "${inputText}". Output the translation alone, do not repeat the input. Don't include some unnecessary things like additional texts like "Here it is translated into", "as an ai language model","Translation:", "translated into", "in", and "translates to"`,
         },
       ],
       model: 'gpt-3.5-turbo',
